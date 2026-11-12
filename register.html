@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erzan & Anda Love Co. | Inscription</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-flex">
+            <div class="logo">Erzan <span>&hearts;</span> Anda Co.</div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="offres.html">Packs d'Amour</a></li>
+                    <li><a href="apropos.html">Notre Histoire</a></li>
+                    <li><a href="login.html">Connexion</a></li>
+                    <li><a href="register.html" class="btn-nav active">Inscription</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="container auth-flex">
+                <form class="auth-form" action="#" method="post">
+                    <h2>Inscription Programme Amour Illimité</h2>
+                    <p class="form-subtitle">Réservé uniquement à Anda (vérification d'identité requise).</p>
+
+                    <div class="form-group">
+                        <label for="reg-name">Prénom de la Reine</label>
+                        <input type="text" id="reg-name" name="fullname" value="Anda" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reg-email">Adresse e-mail</label>
+                        <input type="email" id="reg-email" name="email" placeholder="anda@moncoeur.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reg-pack">Pack d'amour préféré</label>
+                        <select id="reg-pack" name="pack">
+                            <option value="matin">Pack Matin Douceur</option>
+                            <option value="cocooning" selected>Pack Soirée Cocooning</option>
+                            <option value="all-inclusive">Pack All-Inclusive Vie Entière</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Urgence du prochain câlin :</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="urgence" value="immediat" checked> Immédiat (dans 5 sec)</label>
+                            <label><input type="radio" name="urgence" value="ce-soir"> Ce soir avec un bon film</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reg-password">Créer un mot de passe</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="reg-password" name="password" placeholder="Choisis un mot de passe" required>
+                            <button type="button" class="toggle-password" data-target="reg-password">Afficher</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">J'accepte de recevoir l'amour d'Erzan sans limite de temps.</label>
+                    </div>
+
+                    <button type="submit" class="btn-primary full-width">Valider mon contrat d'amour</button>
+                    <p class="form-footer">Déjà inscrite ? <a href="login.html">Se connecter</a></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-flex">
+            <p>&copy; 2026 Erzan & Anda Love Co. — Tous droits réservés exclusivement à Anda.</p>
+            <p>Siège social : Dans le cœur d'Erzan.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

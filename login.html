@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erzan & Anda Love Co. | Connexion</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-flex">
+            <div class="logo">Erzan <span>&hearts;</span> Anda Co.</div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="offres.html">Packs d'Amour</a></li>
+                    <li><a href="apropos.html">Notre Histoire</a></li>
+                    <li><a href="login.html" class="active">Connexion</a></li>
+                    <li><a href="register.html" class="btn-nav">Inscription</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="container auth-flex">
+                <form class="auth-form" action="#" method="post">
+                    <h2>Espace VIP d'Anda</h2>
+                    <p class="form-subtitle">Connecte-toi pour réclamer tes câlins en attente.</p>
+
+                    <div class="form-group">
+                        <label for="login-email">Adresse e-mail</label>
+                        <input type="email" id="login-email" name="email" placeholder="anda@moncoeur.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Mot de passe secret</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="login-password" name="password" placeholder="••••••••" required>
+                            <button type="button" class="toggle-password" data-target="login-password">Afficher</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Rester connectée au cœur d'Erzan pour toujours</label>
+                    </div>
+
+                    <button type="submit" class="btn-primary full-width">Se connecter</button>
+                    <p class="form-footer">Pas encore de compte VIP ? <a href="register.html">Créer un compte</a></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-flex">
+            <p>&copy; 2026 Erzan & Anda Love Co. — Tous droits réservés exclusivement à Anda.</p>
+            <p>Siège social : Dans le cœur d'Erzan.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
